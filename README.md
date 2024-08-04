@@ -8,7 +8,7 @@ Follow the Instruction to successfuly use the project!
 If Not installed please refer to the official installation guide:-\
 - Visit to download both [Node + NPM](https://nodejs.org/en/download/package-manager)
 
-##Package installation
+## Package installation
 install all the packages required by running the following command on cmd
 ```
 npm install
