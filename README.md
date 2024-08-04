@@ -23,4 +23,4 @@ Add pictures in `test` to test the functionallity of the project. Then RUN:-
 ```
 node ./predict.js
 ```
-the result will be probability and conclusion wether it's eFada or Not
+the result will be wether it's eFada or Not
