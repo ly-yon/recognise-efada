@@ -3,13 +3,14 @@ const fs = require("fs");
 async function main(name) {
   try {
     model = await tf.loadLayersModel("file://model/model.json");
+    if (!/\./i.test(name)) return;
     const image = fs.readFileSync(`Test/${name}`);
     const classes = ["efada", "not_efada"];
     TARGET_CLASSES = Object.assign({}, classes);
     // Pre-process the image
     let tensor = tf.node
       .decodeImage(image, 3)
-      .resizeNearestNeighbor([224, 224])
+      .resizeNearestNeighbor([100, 100])
       .toFloat()
       .div(tf.scalar(255.0))
       .expandDims();
@@ -22,7 +23,7 @@ async function main(name) {
         };
       })
       .sort((a, b) => b.probability - a.probability);
-    // console.log(top5);
+    console.log(top5);
     console.log(
       "After Concluding the Result:-\nPicture " +
         name +

@@ -25,7 +25,7 @@ function loadImages(dataDir) {
       var buffer = fs.readFileSync(filePath);
       var imageTensor = tf.node
         .decodeImage(buffer, 3)
-        .resizeNearestNeighbor([224, 224])
+        .resizeNearestNeighbor([100, 100])
         .toFloat()
         .div(tf.scalar(255.0))
         .expandDims();

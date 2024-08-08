@@ -1,3 +1,5 @@
 # ignore node_modules
 node_modules/*
 package-lock.json
+Test/efada/*
+Test/not_efada/*

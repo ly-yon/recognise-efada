@@ -9,7 +9,7 @@ const dropout_dense = 0.3;
 const model = tf.sequential();
 model.add(
   tf.layers.conv2d({
-    inputShape: [224, 224, 3],
+    inputShape: [100, 100, 3],
     filters: first_filters,
     kernelSize: kernel_size,
     activation: "relu",

@@ -28,4 +28,4 @@ async function run(epochs, batchSize, modelSavePath) {
     console.log(`Saved model to path: ${modelSavePath}`);
   }
 }
-run(10, 32, "./model");
+run(100, 32, "./model");
