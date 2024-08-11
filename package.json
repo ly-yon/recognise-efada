@@ -9,6 +9,7 @@
   "author": "Hamza Hasan",
   "license": "ISC",
   "dependencies": {
-    "@tensorflow/tfjs-node": "^4.20.0"
+    "@tensorflow/tfjs-node": "^4.20.0",
+    "jimp": "^0.22.12"
   }
 }
