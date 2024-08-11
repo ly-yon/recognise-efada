@@ -37,7 +37,7 @@ function loadImages(dataDir) {
   return [images, labels];
 }
 // Helper class to handle loading training and test data.
-class FoodDataset {
+class efada {
   constructor() {
     this.trainData = [];
     this.testData = [];
@@ -68,4 +68,4 @@ class FoodDataset {
     };
   }
 }
-module.exports = new FoodDataset();
+module.exports = new efada();
